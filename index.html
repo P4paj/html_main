@@ -25,7 +25,26 @@
     </header>
     <main>
       
-        <p>To jest prosty szablon strony HTML. Możesz go edytować i dostosować do swoich potrzeb.</p>
+    <p>Zaprojektuj swój własny artykuł</p>
+        <div class= "HTML_BOX" ></div>
+            <textarea id="sss" placeholder="Tutaj Wpisz kod HTML..."></textarea>
+            <div class="HTML_PREVIEW"></div>
+            <iframe id="preview" style="width: 100%; height: 300px; border: 1px solid #ccc;"></iframe>
+            </div>
+        </div>
+      
+        <script>
+            const textarea = document.getElementById('sss');
+            const preview = document.getElementById('preview');
+
+            textarea.addEventListener('input', () => {
+                const content = textarea.value;
+                const doc = preview.contentDocument || preview.contentWindow.document;
+                doc.open();
+                doc.write(content);
+                doc.close();
+            });
+        </script>
     </main>
     <footer>
         <p>&copy; 2025 STMP - HIIT</p>
