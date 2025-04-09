@@ -43,26 +43,40 @@ footer {
 main {
     padding: 10rem;  
    
+   }
+#naglowek{
+    text-align: center;
+}   
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .HTML_BOX {
     display: flex; /* Ustawia elementy wewnątrz w jednym wierszu */
     gap: 1rem; /* Odstęp między elementami */
+
 }
- #sss {
+ #editor {
     resize: both; 
     overflow: auto; 
-    width: 50%; 
+    width: 500px; 
     height: 300px;
     background-color: #554;
     color: black;
  }
  .HTML_preview {
-    resize: both;
     overflow: auto;
-    width: 50%; /* Ustaw szerokość na 50% */
-    height: 300px;
-    background-color: #ddd;
-    color: black;
     margin-left: 0; /* Usuń margines, jeśli jest zbędny */
 }
+
+#preview {
+    resize: both;
+    width: 500px;
+    height: 300px;
+
+    /*border: 1px solid #ccc;*/
+}
+
 

@@ -25,16 +25,19 @@
     </header>
     <main>
       
-    <p>Zaprojektuj swój własny artykuł</p>
-        <div class= "HTML_BOX" ></div>
-            <textarea id="sss" placeholder="Tutaj Wpisz kod HTML..."></textarea>
-            <div class="HTML_PREVIEW"></div>
-            <iframe id="preview" style="width: 100%; height: 300px; border: 1px solid #ccc;"></iframe>
+    <p id="naglowek"> Zaprojektuj swój własny artykuł</p>
+        <div class="main-content">
+            <div class="HTML_BOX">
+            <div class= "HTML_BOX" >
+                <textarea id="editor" placeholder="Tutaj Wpisz kod HTML..."></textarea>
+             </div>
+            <div class="HTML_PREVIEW">
+                <iframe id="preview" ></iframe>
             </div>
         </div>
       
         <script>
-            const textarea = document.getElementById('sss');
+            const textarea = document.getElementById('editor');
             const preview = document.getElementById('preview');
 
             textarea.addEventListener('input', () => {
